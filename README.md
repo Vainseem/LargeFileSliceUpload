@@ -15,17 +15,21 @@
   end: '结束长度索引',
   filename: '文件名称', // name + hash
   exists: true // 是否存在于数据库，已存在则跳过上传
-},{}]
+},......]
 ```
 BFF层（后端）通过判断项目里是否有改文件名的hash，进行选择是上传还是跳过
 一个文件对应着多个文件的hash分片，服务器理论上只存储hash分片，不存储文件
+
 2. 项目启动
+
 前端启动
+
 ```bash
 项目目录> npm i
 项目目录> npm start
 ```
 BFF层启动
+
 ```bash
 项目目录> node node/index.js
 ```
